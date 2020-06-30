@@ -19,6 +19,7 @@
   grid-template-columns: repeat(var(--grid-cols), 1fr);
   width: 100vw;
   height: 100vh;
+  padding: 0 1rem;
 }
 
 .grid-item {
