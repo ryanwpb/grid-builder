@@ -25,6 +25,9 @@
   border: 1px solid #ddd;
   text-align: center;
   border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-item:hover {
