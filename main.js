@@ -8,7 +8,7 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   heightValue = document.querySelector("#grid-height").value;
   widthValue = document.querySelector("#grid-width").value;
-  color = document.querySelector("#grid-color").value;
+  color = document.querySelector("#grid-color").value.trim();
   heightValue = parseInt(heightValue);
   widthValue = parseInt(widthValue);
   if (heightValue >= 100) {
@@ -33,8 +33,15 @@ function makeRows(rows, cols, color) {
   for (c = 0; c < rows * cols; c++) {
     let cell = document.createElement("div");
     cell.innerText = c + 1;
-    cell.style.background = color;
+
     container.appendChild(cell).className = "grid-item";
+    isValidHex = /^#(?:[0-9a-f]{3}){1,2}$/i;
+    if (isValidHex.test(color)) {
+      cell.style.background = color;
+    } else {
+      alert("Invalid CSS Hex Color");
+      return false;
+    }
     cell.addEventListener("click", function () {
       if (cell.classList.contains("selected")) {
         cell.classList.remove("selected");
