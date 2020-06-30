@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
 }
 
 #container {
@@ -43,7 +44,8 @@
 }
 
 #form input {
-  width: 95%;
+  display: block;
+  width: 100%;
   margin: 1rem auto;
   padding: 0.5rem;
   border: solid 1px #ccc;
