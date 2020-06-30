@@ -4,6 +4,13 @@
   --radius: 0.25rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
 #container {
   display: grid;
   grid-gap: 1em;
