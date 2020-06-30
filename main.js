@@ -29,7 +29,7 @@ form.addEventListener("submit", function (e) {
   if (isValidHex.test(color)) {
     makeRows(heightValue, widthValue, color);
   } else {
-    alert("Invalid CSS Hex Color");
+    alert("Invalid CSS Hex Color, try: #ff5a5f");
   }
 });
 
