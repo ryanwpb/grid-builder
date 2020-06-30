@@ -12,13 +12,13 @@ form.addEventListener("submit", function (e) {
   color = document.querySelector("#grid-color").value.trim();
   heightValue = parseInt(heightValue);
   widthValue = parseInt(widthValue);
-  if (heightValue >= 100) {
+  if (heightValue > 100) {
     alert(" Height can not be greater than 100");
     return false;
   } else if (heightValue <= 0) {
     alert(" Height can not be a negative number or 0");
     return false;
-  } else if (widthValue >= 100) {
+  } else if (widthValue > 100) {
     alert("Width cant be greater than 100");
     return false;
   } else if (widthValue <= 0) {
