@@ -19,7 +19,7 @@ form.addEventListener("submit", function (e) {
     alert(" Height can not be a negative number or 0");
     return false;
   } else if (widthValue > 100) {
-    alert("Width cant be greater than 100");
+    alert("Width can not be greater than 100");
     return false;
   } else if (widthValue <= 0) {
     alert(" Width can not be a negative number or 0");
