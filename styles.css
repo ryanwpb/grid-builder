@@ -58,7 +58,7 @@
   padding: 0.5rem;
   background: #ff5a5f;
   border: #ff5a5f;
-  border-radius: 0.25rem;
+  border-radius: var(--radius);
   color: #fff;
 }
 
