@@ -33,9 +33,9 @@
   cursor: pointer;
 }
 
-/* .grid-item:hover {
+.grid-item:hover {
   border: solid 1px #ff5a5f;
-} */
+}
 
 #form {
   max-width: 367px;
