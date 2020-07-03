@@ -34,7 +34,7 @@
 }
 
 .grid-item:hover {
-  border: solid 1px #ff5a5f;
+  border-color: #ff5a5f !important;
 }
 
 #form {
