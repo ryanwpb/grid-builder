@@ -40,6 +40,7 @@ function makeRows(rows, cols, color) {
     let cell = document.createElement("div");
     cell.innerText = c + 1;
     cell.style.background = color;
+    cell.style.borderColor = color;
     container.appendChild(cell).className = "grid-item";
     cell.addEventListener("click", function () {
       if (cell.classList.contains("selected")) {
